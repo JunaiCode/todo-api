@@ -3,6 +3,6 @@ const app = express();
 app.get("/", (req, res) => {
     res.send("Hello world!!!!");
 });
-app.listen(3000, () => {
+app.listen(process.env.PORT || 80, () => {
     console.log("The application is listening on port 3000!");
 });
